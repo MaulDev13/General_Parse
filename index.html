@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parser</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>Parser</h1>
+        </header>
+
+        <!-- Action Card -->
+        <div class="card">
+            <div class="button-group">
+                <button id="loadSample1">Load Sample 1</button>
+                <button id="loadSample2">Load Sample 2</button>
+                <button id="clearData">Clear</button>
+            </div>
+        </div>
+
+        <!-- Input Card -->
+        <div class="card">
+            <h2>Input</h2>
+            <textarea
+                id="inputText"
+                placeholder="Masukkan teks di sini..."
+                rows="12"
+            ></textarea>
+        </div>
+
+        <!-- Parse Card -->
+        <div class="card">
+            <button id="parseButton" class="primary-button">
+                Parse
+            </button>
+        </div>
+
+        <!-- Result Card -->
+        <div class="card">
+            <h2>Result</h2>
+            <textarea
+                id="resultText"
+                placeholder="Hasil parse akan muncul di sini..."
+                rows="12"
+            ></textarea>
+        </div>
+
+    </div>
+
+    <script src="js/parse.js"></script>
+    <script src="js/batchexecute_parse.js"></script>
+</body>
+</html>

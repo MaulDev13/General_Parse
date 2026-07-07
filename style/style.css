@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #444;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    background: #e0e0e0;
+    color: #333;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.primary-button {
+    width: 100%;
+    background: #1976d2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.primary-button:hover {
+    background: #1565c0;
+}
+
+#loadSample1 {
+    background: #4caf50;
+    color: white;
+}
+
+#loadSample2 {
+    background: #ff9800;
+    color: white;
+}
+
+#clearData {
+    background: #f44336;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    min-height: 220px;
+    resize: vertical;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Consolas, Monaco, monospace;
+    line-height: 1.5;
+    outline: none;
+    transition: 0.2s;
+    background: #fafafa;
+}
+
+textarea:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+    background: #fff;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+
+    textarea {
+        min-height: 180px;
+    }
+
+}
